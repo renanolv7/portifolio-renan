@@ -10,9 +10,14 @@
 }
 
 body {
+
     height: 100vh;
     max-width: 100vw;
+    background-image: url("/assets/img/shadow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--bgblack);
+
 }
 
 .top {
@@ -74,4 +79,68 @@ body {
 
     }
 
+}
+
+.left-section {
+    width: fit-content;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    height: 200px;
+
+    .profile {
+    
+        .name {
+            color: var(--color-links);
+            font-size: 64px;
+        }
+
+        .profession {
+            color: var(--color-links);
+            font-size: 40px;
+            font-weight: 200;
+        }
+
+        .profession::after {
+            margin-top: 5px;
+
+            content: "";
+            width: 150px;
+            height: 2px;
+            background-color: var(--primary-color);
+
+            position: absolute;
+            left: 5px;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    }
+
+    .social-medias {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 30px;
+
+        img {
+            width: 40px;
+        }
+
+    }
+
+}
+
+.right-section {
+    position: absolute;
+    bottom: 0;
+    right: 230px;
+
+    img {
+        width: 400px;
+
+    }
 }
