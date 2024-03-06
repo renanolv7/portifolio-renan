@@ -76,6 +76,7 @@ body {
 .left-section .profile .name {
   color: var(--color-links);
   font-size: 64px;
+  text-transform: uppercase;
 }
 .left-section .profile .profession {
   color: var(--color-links);
