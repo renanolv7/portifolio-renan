@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portifólio | Renan Oliveira</title>
+
+    <!-- RESET - CSS -->
+    <link rel="stylesheet" href="/styles/reset.css">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css principal  -->
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body class="background">
+
+    <header>
+        <div class="top">
+            <a href="#"><img src="/assets/icons/Logo.jpg" class="logo" alt="Logotipo renan"></a>
+            <nav>
+                <div class="links">
+                    <a class="about-me" href="#">sobre mim</a>
+                </div>
+
+                <div class="links">
+                    <a class="projects" href="#">projetos</a>
+                </div>
+
+                <div class="links">
+                    <a class="contact" href="#contact">contato</a>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="profile-section">
+
+            <div class="left-section">
+
+                <div class="profile">
+
+                    <div class="infos">
+                        <p class="name">Renan Oliveira</p>
+                        <p class="profession">Desenvolvedor Web</p>
+                    </div>
+
+                    <!-- Para separar os conteúdos -->
+                    <div class="divider"></div>
+
+
+                    <div class="social-medias">
+                        <div class="circle-linkedin">
+                            <a href="https://www.linkedin.com/in/renanolv/" target="_blank"><img
+                                    src="/assets/icons/icon-linkedin.png" alt="Ícone linkedin"></a>
+                        </div>
+
+                        <div class="circle-whats">
+                            <a href="https://wa.me/5541988882310?text=Olá%20Renan%20vim%20pelo%20seu%20portifólio"><img
+                                    src="/assets/icons/icon-whats.png" alt="Icone WhatsApp"></a>
+                        </div>
+
+                        <div class="circle-github">
+                            <a href="https://github.com/renanolv7?tab=repositories" target="_blank"><img
+                                    src="/assets/icons/github.png" alt="Icone github"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="right-section">
+
+                <img src="/assets/img/picture-profile.png" alt="Foto renan">
+
+            </div>
+
+        </section>
+
+        <section class="contact">
+
+            <!-- Seção de contato -->
+            <section id="contact" class="contact-section">
+
+                <div class="contact-content">
+
+                    <h2 class="title">Contato</h2>
+
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- (contato, dúvida, aviso ou outro).
+                         -->
+                        <div class="typemessage">
+                            <div class="title">
+                                <p class="title-typemessage">Tipo de Mensagem</p>
+                            </div>
+                            <div class="options">
+                                <label for="contact">Contato</label>
+                                <input id="contact" name="messageType" type="radio">
+
+                                <label for="duvida">Dúvida</label>
+                                <input id="duvida" name="messageType" type="radio">
+
+                                <label for="aviso">Aviso</label>
+                                <input id="aviso" name="messageType" type="radio">
+
+                                <label for="outro">Outro</label>
+                                <input id="outro" name="messageType" type="radio">
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="contact-button">
+                            <button class="btn-submit" type="submit" onclick="submitInfos()">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+            </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>

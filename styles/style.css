@@ -9,13 +9,17 @@
   font-family: "Lato", Verdana, sans-serif;
 }
 
-body {
-  height: 100vh;
-  max-width: 100vw;
+.background {
   background-image: url("/assets/img/shadow.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body {
+  height: 100vh;
+  max-width: 100vw;
   background-color: var(--bgblack);
+  scroll-behavior: smooth;
 }
 
 .top {
@@ -24,7 +28,7 @@ body {
   justify-content: space-between;
   padding: 0 30px;
 }
-.top a .logo {
+.top .logo {
   width: 55px;
   margin: 15px;
 }
@@ -65,50 +69,132 @@ body {
   width: 60%;
 }
 
+.profile-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
 .left-section {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  top: 200px;
-  left: 100px;
-  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.left-section .profile {
+  color: var(--color-links);
 }
 .left-section .profile .name {
-  color: var(--color-links);
   font-size: 64px;
+  text-transform: uppercase;
 }
 .left-section .profile .profession {
-  color: var(--color-links);
   font-size: 40px;
   font-weight: 200;
 }
-.left-section .profile .profession::after {
-  margin-top: 5px;
-  content: "";
-  width: 150px;
-  height: 2px;
+.left-section .profile .divider {
+  width: 160px;
+  height: 1px;
+  margin: 10px 5px;
   background-color: var(--primary-color);
-  position: absolute;
-  left: 5px;
-  display: flex;
-  flex-direction: column;
 }
-.left-section .social-medias {
+.left-section .profile .social-medias {
   width: 160px;
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 30px;
+  margin: 10px 5px;
 }
-.left-section .social-medias img {
+.left-section .profile .social-medias img {
   width: 40px;
 }
 
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .right-section {
-  position: absolute;
-  bottom: 0;
-  right: 230px;
+  align-self: flex-end;
 }
 .right-section img {
+  filter: brightness(70%);
   width: 400px;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgblack);
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+.contact-section .contact-content {
+  background-color: #353535;
+  color: var(--color-links);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 150px 0;
+}
+.contact-section .contact-content .title {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.contact-section .contact-content .form {
+  width: 40vw;
+}
+.contact-section .contact-content .typemessage .title {
+  justify-content: start;
+  padding: 0;
+}
+.contact-section .contact-content .typemessage .title-typemessage {
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact-section .contact-content .typemessage .options {
+  display: flex;
+  padding: 16px 0;
+}
+.contact-section .contact-content .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+}
+.contact-section .contact-content .form-group #name,
+.contact-section .contact-content .form-group #email,
+.contact-section .contact-content .form-group #message {
+  width: 40vw;
+}
+.contact-section .contact-content label {
+  display: block;
+  font-weight: 400;
+}
+.contact-section .contact-content input[type=text],
+.contact-section .contact-content input[type=email],
+.contact-section .contact-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+.contact-section .contact-content .contact-button {
+  display: flex;
+  justify-content: end;
+}
+.contact-section .contact-content .contact-button .btn-submit {
+  border: none;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
