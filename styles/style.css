@@ -7,6 +7,7 @@
 * {
   box-sizing: border-box;
   font-family: "Lato", Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .background {
@@ -19,7 +20,6 @@ body {
   height: 100vh;
   max-width: 100vw;
   background-color: var(--bgblack);
-  scroll-behavior: smooth;
 }
 
 .top {
