@@ -22,18 +22,21 @@
 
 </head>
 
+<!-- para meu background ocupar meu body inteiro -->
+
 <body class="background">
 
+    <!-- parte superior da minha página -->
     <header>
-        <div class="top">
-            <a href="#"><img src="/assets/icons/Logo.jpg" class="logo" alt="Logotipo renan"></a>
+        <div id="top" class="top">
+            <a href="/pages/index.html"><img src="/assets/icons/Logo.jpg" class="logo" alt="Logotipo renan"></a>
             <nav>
                 <div class="links">
-                    <a class="about-me" href="#">sobre mim</a>
+                    <a class="about-me" href="">sobre mim</a>
                 </div>
 
                 <div class="links">
-                    <a class="projects" href="#">projetos</a>
+                    <a class="projects" href="#projects-section">projetos</a>
                 </div>
 
                 <div class="links">
@@ -47,7 +50,8 @@
 
     <main>
 
-        <section class="profile-section">
+        <!-- seção da apresentação do meu perfil (nome, profissão, redes sociais e foto)-->
+        <section id="profile-section" class="profile-section">
 
             <div class="left-section">
 
@@ -69,8 +73,8 @@
                         </div>
 
                         <div class="circle-whats">
-                            <a href="https://wa.me/5541988882310?text=Olá%20Renan%20vim%20pelo%20seu%20portifólio"><img
-                                    src="/assets/icons/icon-whats.png" alt="Icone WhatsApp"></a>
+                            <a href="https://wa.me/5541988882310?text=Olá%20Renan%20vim%20pelo%20seu%20portifólio"
+                                target="_blank"><img src="/assets/icons/icon-whats.png" alt="Icone WhatsApp"></a>
                         </div>
 
                         <div class="circle-github">
@@ -79,8 +83,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="right-section">
@@ -89,13 +91,160 @@
 
             </div>
 
-
+            <a class="btn-up" href="#top"><img src="/assets/icons/up-arrow.png" alt="Icone up-arrow"></a>
 
         </section>
 
+        <section id="projects-section" class="projects-section">
+
+            <div class="container-projects">
+
+                <div class="projects">
+
+                    <div class="project-um">
+
+                        <div class="image">
+                            <img src="/assets/img/image-project1.png" alt="Imagem projeto um" width="400px">
+                        </div>
+                        <div class="info-project">
+
+                            <div class="descriptions">
+                                <h4 class="title">Advice Slip</h4>
+                                <p class="description">Projeto utilizando API Advice Slips que retorna conselhos
+                                    variados... </p>
+                            </div>
+
+                            <div class="technologies">
+
+                                <div class="icon-html">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                                        alt="Icone html5" />
+                                </div>
+
+                                <div class="icon-css">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                                        alt="Icone css3" />
+                                </div>
+
+                                <div class="icon-sass">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                                        alt="Icone sass">
+                                </div>
+                                <div class="icon-js">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                </div>
+
+                            </div>
+
+                            <div class="deploy">
+                                <a href="https://advice-generator-r.vercel.app" target="_blank">deploy</a>
+                                <a href="https://github.com/renanolv7/advice-generator" target="_blank">github</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-dois">
+
+                        <div class="image">
+                            <img src="/assets/img/image-project2.png" alt="Imagem projeto um">
+                        </div>
+                        <div class="info-project">
+
+                            <div class="descriptions">
+                                <h4 class="title">Tela de cadastro</h4>
+                                <p class="description">Projeto de uma tela de cadastro, contendo todas verificações de
+                                    nome,
+                                    senha e email</p>
+                            </div>
+
+                            <div class="technologies">
+
+                                <div class="icon-html">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                                        alt="Icone html5" />
+                                </div>
+
+                                <div class="icon-css">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                                        alt="Icone css3" />
+                                </div>
+
+                                <div class="icon-sass">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                                        alt="Icone sass">
+                                </div>
+                                <div class="icon-js">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                </div>
+
+                            </div>
+
+                            <div class="deploy">
+                                <a href="https://tela-cadastro-a.vercel.app" target="_blank">deploy</a>
+                                <a href="https://github.com/renanolv7/tela-cadastro">github</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-tres">
+
+                        <div class="image">
+                            <img src="/assets/img/image-project3.png" alt="Imagem projeto 3">
+                        </div>
+                        <div class="info-project">
+
+                            <div class="descriptions">
+                                <h4 class="title">Site Links</h4>
+                                <p class="description">Página web desenvolvida para disciplina de Desenvolvimento Web I.
+                                    Tem como premissa armazenar links de todas as aulas sobre todos conteúdos
+                                    aprendidos.</p>
+                            </div>
+
+                            <div class="technologies">
+
+                                <div class="icon-html">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                                        alt="Icone html5" />
+                                </div>
+
+                                <div class="icon-css">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                                        alt="Icone css3" />
+                                </div>
+
+                                <div class="icon-sass">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                                        alt="Icone sass">
+                                </div>
+                                <div class="icon-js">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                </div>
+
+                            </div>
+
+                            <div class="deploy">
+                                <a href="http://renanolv.pythonanywhere.com" target="_blank">deploy</a>
+                                <a href="https://github.com/renanolv7/project-links" target="_blank">github</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seção de contato -->
         <section class="contact">
 
-            <!-- Seção de contato -->
             <div id="contact" class="contact-section">
 
                 <div class="contact-content">
@@ -104,21 +253,19 @@
 
                     <form class="form">
                         <div class="form-group">
-                            <label for="name">Nome:</label>
+                            <label for="name">Nome</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
 
-                        <!-- (contato, dúvida, aviso ou outro).
-                         -->
                         <div class="typemessage">
                             <div class="title">
                                 <p class="title-typemessage">Tipo de Mensagem</p>
                             </div>
-                            <div class="options">
+                            <div id="options" class="options">
                                 <label for="contact">Contato</label>
                                 <input id="contact" name="messageType" type="radio">
 
@@ -131,8 +278,6 @@
                                 <label for="outro">Outro</label>
                                 <input id="outro" name="messageType" type="radio">
                             </div>
-
-
                         </div>
 
                         <div class="form-group">
@@ -140,7 +285,7 @@
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
 
-                        <div class="contact-button">
+                        <div class="container-btnsubmit">
                             <button class="btn-submit" type="submit" onclick="submitInfos()">Enviar</button>
                         </div>
 
