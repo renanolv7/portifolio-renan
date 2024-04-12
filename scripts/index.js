@@ -1,4 +1,21 @@
 
+const projectSection = document.querySelector('.projects-section');
+const elements = document.querySelectorAll('.hidden');
+
+const myObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } 
+
+    })
+
+});
+
+elements.forEach((element) => myObserver.observe(element));
+
 
 function submitInfos() {
     let name = document.getElementById("name").value;
@@ -33,3 +50,4 @@ function submitInfos() {
     // CRIAR CÓDIGO PARA PEGAR OS VALORES DOS INPUTS COM TYPE RADIO
     // NÃO CONSEGUI FAZER  
 }
+
