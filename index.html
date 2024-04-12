@@ -8,7 +8,7 @@
     <title>Portifólio | Renan Oliveira</title>
 
     <!-- RESET - CSS -->
-    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
 
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,21 +18,21 @@
         rel="stylesheet">
 
     <!-- Css principal  -->
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
 </head>
 
 <!-- para meu background ocupar meu body inteiro -->
 
-<body class="background">
+<body>
 
     <!-- parte superior da minha página -->
     <header>
         <div id="top" class="top">
-            <a href="/pages/index.html"><img src="/assets/icons/Logo.jpg" class="logo" alt="Logotipo renan"></a>
+            <a href="./index.html"><img src="./assets/icons/Logo.jpg" class="logo" alt="Logotipo renan"></a>
             <nav>
                 <div class="links">
-                    <a class="about-me" href="">sobre mim</a>
+                    <a class="about-me" href="#profile-section">sobre mim</a>
                 </div>
 
                 <div class="links">
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="links">
-                    <a class="contact" href="#contact">contato</a>
+                    <a class="contact" href="#contact-section">contato</a>
                 </div>
 
             </nav>
@@ -69,42 +69,44 @@
                     <div class="social-medias">
                         <div class="circle-linkedin">
                             <a href="https://www.linkedin.com/in/renanolv/" target="_blank"><img
-                                    src="/assets/icons/icon-linkedin.png" alt="Ícone linkedin"></a>
+                                    src="./assets/icons/icon-linkedin.png" alt="Ícone linkedin"></a>
                         </div>
 
                         <div class="circle-whats">
                             <a href="https://wa.me/5541988882310?text=Olá%20Renan%20vim%20pelo%20seu%20portifólio"
-                                target="_blank"><img src="/assets/icons/icon-whats.png" alt="Icone WhatsApp"></a>
+                                target="_blank"><img src="./assets/icons/icon-whats.png" alt="Icone WhatsApp"></a>
                         </div>
 
                         <div class="circle-github">
                             <a href="https://github.com/renanolv7?tab=repositories" target="_blank"><img
-                                    src="/assets/icons/github.png" alt="Icone github"></a>
+                                    src="./assets/icons/github.png" alt="Icone github"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="right-section">
-
-                <img src="/assets/img/picture-profile.png" alt="Foto renan">
-
+                <img src="./assets/img/picture-profile.png" alt="Foto renan">
             </div>
 
-            <a class="btn-up" href="#top"><img src="/assets/icons/up-arrow.png" alt="Icone up-arrow"></a>
+            <a class="btn-up" href="#top"><img src="./assets/icons/up-arrow.png" alt="Icone up-arrow"></a>
 
         </section>
 
         <section id="projects-section" class="projects-section">
 
+            <div class="title-projects">
+                <p class="title">Principais projetos</p>
+            </div>
+
             <div class="container-projects">
 
                 <div class="projects">
 
-                    <div class="project-um">
+                    <div class="project-um hidden">
 
                         <div class="image">
-                            <img src="/assets/img/image-project1.png" alt="Imagem projeto um" width="400px">
+                            <img src="./assets/img/image-project1.png" alt="Imagem projeto um" width="400px">
                         </div>
                         <div class="info-project">
 
@@ -145,10 +147,10 @@
 
                     </div>
 
-                    <div class="project-dois">
+                    <div class="project-dois hidden">
 
                         <div class="image">
-                            <img src="/assets/img/image-project2.png" alt="Imagem projeto um">
+                            <img src="./assets/img/image-project2.png" alt="Imagem projeto dois">
                         </div>
                         <div class="info-project">
 
@@ -190,10 +192,10 @@
 
                     </div>
 
-                    <div class="project-tres">
+                    <div class="project-tres hidden">
 
                         <div class="image">
-                            <img src="/assets/img/image-project3.png" alt="Imagem projeto 3">
+                            <img src="./assets/img/image-project3.png" alt="Imagem projeto 3">
                         </div>
                         <div class="info-project">
 
@@ -235,10 +237,10 @@
 
                     </div>
 
-                    <div class="project-quatro">
+                    <div class="project-quatro hidden">
 
                         <div class="image">
-                            <img src="/assets/img/image-project4.png" alt="Imagem projeto 4">
+                            <img src="./assets/img/image-project4.png" alt="Imagem projeto 4">
                         </div>
                         <div class="info-project">
 
@@ -288,9 +290,9 @@
         </section>
 
         <!-- Seção de contato -->
-        <section class="contact">
+        <section id="contact-section" class="contact-section">
 
-            <div id="contact" class="contact-section">
+            <div class="container-section">
 
                 <div class="contact-content">
 
@@ -348,7 +350,7 @@
 
     </footer>
 
-    <script src="/scripts/scripts.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
