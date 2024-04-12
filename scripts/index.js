@@ -2,7 +2,7 @@
 const projectSection = document.querySelector('.projects-section');
 const elements = document.querySelectorAll('.hidden');
 
-const myObserver = new IntersectionObserver((entradas) => {
+const myObserver = new IntersectionObserver((entries) => {
 
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
