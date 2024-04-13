@@ -447,19 +447,16 @@ body .education-section {
   background-color: var(--bg-color-education);
 }
 body .education-section .title-education {
-  color: white;
-  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 26px 0;
 }
 body .education-section .title-education .title {
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 32px;
+  padding: 26px 0;
   font-weight: 300;
+  font-size: 38px;
   text-transform: uppercase;
+  color: white;
 }
 body .education-section .container-section {
   display: flex;
