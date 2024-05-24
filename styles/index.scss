@@ -125,7 +125,7 @@ body {
                     .circle-github {
                         img:hover {
                             transform: scale(1.2);
-               
+
                         }
                     }
                 }
@@ -554,7 +554,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            margin-bottom: 30px;
+
             .title {
                 padding: 26px 0;
                 font-weight: 300;
@@ -565,13 +566,114 @@ body {
         }
 
         .container-section {
-            display: flex;
-            justify-content: center;
             text-transform: uppercase;
+            height: 80%;
+            padding: 18px;
+            display: flex;
+            flex-direction: row;
 
-            // .education-content {
+            .left-section {
+                .container-line {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 30px;
+                    margin-left: 10vw;
 
-            // }
+                    .line {
+                        width: 2px;
+                        height: 100%;
+                        background-color: #919191;
+                        display: flex;
+                        flex-direction: column;
+
+                        .divider-line {
+                            height: 50%;
+                        }
+
+                        .divider-line-future {
+                            height: 15%;
+                        }
+
+                        .card {
+                            height: 90%;
+                            width: 50vw;
+                            background-color: #1b1b1b;
+                            margin-left: 30px;
+                            padding: 20px;
+                            border-radius: 12px;
+                            transition: transform 1s;
+
+                            .title-education-card {
+                                justify-content: space-around;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+
+                                img {
+                                    width: 80px;
+                                }
+
+                                .institute {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: white;
+                                }
+
+                                .course {
+                                    color: white;
+                                    text-transform: none;
+                                    font-weight: 500;
+                                }
+
+                                .description-experience {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    text-transform: none;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .card:hover {
+                            transform: scale(1.03);
+                        }
+
+                        .card-future {
+                            width: 200px;
+                            margin-left: 30px;
+                            padding: 16px 0;
+                            color: white;
+                            font-weight: 300;
+                        }
+
+                        .circle-in-line,
+                        .circle2-in-line,
+                        .circle3-in-line {
+                            background-color: var(--primary-color);
+                            width: 10px;
+                            height: 10px;
+                            margin-left: -4px;
+                            border-radius: 50%;
+                            position: absolute;
+                        }
+
+                        .circle-in-line {
+                            margin-top: 20px;
+                        }
+
+                        .circle2-in-line {
+                            transition: transform 1s;
+                        }
+
+                        .circle3-in-line {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -601,7 +703,6 @@ body {
     transform: translateX(0);
     transition: all 2s;
 }
-
 
 // /* Estilos padrão para telas menores */
 // /* Estilos para telas de até 600 pixels de largura */

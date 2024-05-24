@@ -450,6 +450,7 @@ body .education-section .title-education {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 body .education-section .title-education .title {
   padding: 26px 0;
@@ -459,9 +460,96 @@ body .education-section .title-education .title {
   color: white;
 }
 body .education-section .container-section {
+  text-transform: uppercase;
+  height: 80%;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+}
+body .education-section .container-section .left-section .container-line {
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30px;
+  margin-left: 10vw;
+}
+body .education-section .container-section .left-section .container-line .line {
+  width: 2px;
+  height: 100%;
+  background-color: #919191;
+  display: flex;
+  flex-direction: column;
+}
+body .education-section .container-section .left-section .container-line .line .divider-line {
+  height: 50%;
+}
+body .education-section .container-section .left-section .container-line .line .divider-line-future {
+  height: 15%;
+}
+body .education-section .container-section .left-section .container-line .line .card {
+  height: 90%;
+  width: 50vw;
+  background-color: #1b1b1b;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 1s;
+}
+body .education-section .container-section .left-section .container-line .line .card .title-education-card {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .education-section .container-section .left-section .container-line .line .card .title-education-card img {
+  width: 80px;
+}
+body .education-section .container-section .left-section .container-line .line .card .title-education-card .institute {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+body .education-section .container-section .left-section .container-line .line .card .title-education-card .course {
+  color: white;
+  text-transform: none;
+  font-weight: 500;
+}
+body .education-section .container-section .left-section .container-line .line .card .title-education-card .description-experience {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  color: white;
+}
+body .education-section .container-section .left-section .container-line .line .card:hover {
+  transform: scale(1.03);
+}
+body .education-section .container-section .left-section .container-line .line .card-future {
+  width: 200px;
+  margin-left: 30px;
+  padding: 16px 0;
+  color: white;
+  font-weight: 300;
+}
+body .education-section .container-section .left-section .container-line .line .circle-in-line,
+body .education-section .container-section .left-section .container-line .line .circle2-in-line,
+body .education-section .container-section .left-section .container-line .line .circle3-in-line {
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  margin-left: -4px;
+  border-radius: 50%;
+  position: absolute;
+}
+body .education-section .container-section .left-section .container-line .line .circle-in-line {
+  margin-top: 20px;
+}
+body .education-section .container-section .left-section .container-line .line .circle2-in-line {
+  transition: transform 1s;
+}
+body .education-section .container-section .left-section .container-line .line .circle3-in-line {
+  margin-bottom: 1rem;
 }
 body footer {
   height: 8vh;
