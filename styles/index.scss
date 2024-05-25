@@ -594,7 +594,20 @@ body {
                         }
 
                         .divider-line-future {
-                            height: 15%;
+                            height: 12%;
+                            display: flex;
+
+                            .loading-container {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            
+
+                            
+
+
                         }
 
                         .card {
@@ -612,6 +625,10 @@ body {
                                 flex-direction: column;
                                 gap: 10px;
 
+                                #img-ifpr {
+                                    width: 40px;
+                                }
+
                                 img {
                                     width: 80px;
                                 }
@@ -623,30 +640,51 @@ body {
                                 }
 
                                 .course {
-                                    color: white;
+                                    color: rgb(201, 197, 197);
                                     text-transform: none;
                                     font-weight: 500;
+                                    display: flex;
+                                    justify-content: space-between;
                                 }
 
                                 .description-experience {
                                     font-size: 14px;
-                                    font-weight: 300;
+                                    font-weight: 400;
                                     text-transform: none;
                                     color: white;
+                                    padding-top: 10px;
+                                    line-height: 16px;
                                 }
+                            }
+
+                            &:hover {
+                                transform: scale(1.03);
                             }
                         }
 
-                        .card:hover {
-                            transform: scale(1.03);
-                        }
-
                         .card-future {
-                            width: 200px;
-                            margin-left: 30px;
-                            padding: 16px 0;
+                            margin-left: 6px;
+                            padding: 16px 30px;
                             color: white;
                             font-weight: 300;
+                            display: flex;
+
+                            .title-future {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-right: 20px;
+
+                                span {
+                                    width: max-content;
+                                }
+                            }
+
+                            .loading {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
                         }
 
                         .circle-in-line,
@@ -662,6 +700,13 @@ body {
 
                         .circle-in-line {
                             margin-top: 20px;
+
+                            .title-future {
+                                display: flex;
+                                flex-direction: row;
+
+                            }
+
                         }
 
                         .circle2-in-line {
@@ -670,6 +715,33 @@ body {
 
                         .circle3-in-line {
                             margin-bottom: 1rem;
+                        }
+
+                        .lds-dual-ring {
+                            width: fit-content;
+                            height: fit-content;
+                            color: #4a4b4b;
+        
+                            &:after {
+                                content: " ";
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                margin: 8px;
+                                border-radius: 50%;
+                                border: 5px solid currentColor;
+                                border-color: currentColor transparent currentColor transparent;
+                                animation: lds-dual-ring 3s linear infinite;
+                            }
+                        }
+
+                        @keyframes lds-dual-ring {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            100% {
+                                transform: rotate(360deg);
+                            }
                         }
                     }
                 }
