@@ -16,7 +16,7 @@
 }
 
 body {
-  max-width: 200vw;
+  max-width: 100vw;
   background-color: var(--bgblack);
 }
 body .top {
@@ -443,7 +443,6 @@ body .projects-section .container-projects .projects .project-quatro .info-proje
   color: white;
 }
 body .education-section {
-  height: 100vh;
   background-color: var(--bg-color-education);
 }
 body .education-section .title-education {
@@ -461,7 +460,6 @@ body .education-section .title-education .title {
 }
 body .education-section .container-section {
   text-transform: uppercase;
-  height: 80%;
   padding: 18px;
   display: flex;
   flex-direction: row;
@@ -495,15 +493,16 @@ body .education-section .container-section .left-section .container-line .line .
   align-items: center;
 }
 body .education-section .container-section .left-section .container-line .line .card {
-  height: 90%;
   width: 50vw;
   background-color: #1b1b1b;
   margin-left: 30px;
   padding: 20px;
   border-radius: 12px;
   transition: transform 1s;
+  margin-bottom: 22px;
 }
 body .education-section .container-section .left-section .container-line .line .card .title-education-card {
+  width: 100%;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
