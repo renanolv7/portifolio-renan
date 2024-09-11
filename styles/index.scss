@@ -577,7 +577,7 @@ body {
                     flex-direction: column;
                     height: 100%;
                     width: 30px;
-                    margin-left: 10vw;
+                    margin-left: 20vw;
 
                     .line {
                         width: 2px;
@@ -604,7 +604,7 @@ body {
                         .card {
                             width: 50vw;
                             background-color: #1b1b1b;
-                            margin-left: 30px;
+                            margin-left: 20px;
                             padding: 20px;
                             border-radius: 12px;
                             transition: transform 1s;
@@ -637,6 +637,8 @@ body {
                                     font-weight: 500;
                                     display: flex;
                                     justify-content: space-between;
+
+
                                 }
 
                                 .description-experience {
@@ -713,7 +715,7 @@ body {
                             width: fit-content;
                             height: fit-content;
                             color: #4a4b4b;
-        
+
                             &:after {
                                 content: " ";
                                 display: block;
@@ -731,6 +733,7 @@ body {
                             0% {
                                 transform: rotate(0deg);
                             }
+
                             100% {
                                 transform: rotate(360deg);
                             }
@@ -876,6 +879,26 @@ body {
 
         .education-section {
             .container-section {
+                .left-section {
+                    .container-line {
+                        margin-left: 0;
+
+                        .line {
+                            .divider-line {
+                                .card {
+                                    width: 80vw;
+
+                                    .course {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .education-content {
                     display: none;
                 }

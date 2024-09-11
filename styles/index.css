@@ -471,7 +471,7 @@ body .education-section .container-section .left-section .container-line {
   flex-direction: column;
   height: 100%;
   width: 30px;
-  margin-left: 10vw;
+  margin-left: 20vw;
 }
 body .education-section .container-section .left-section .container-line .line {
   width: 2px;
@@ -495,7 +495,7 @@ body .education-section .container-section .left-section .container-line .line .
 body .education-section .container-section .left-section .container-line .line .card {
   width: 50vw;
   background-color: #1b1b1b;
-  margin-left: 30px;
+  margin-left: 20px;
   padding: 20px;
   border-radius: 12px;
   transition: transform 1s;
@@ -716,6 +716,17 @@ body footer .footer-copy {
   body .projects-section .container-projects .projects .project-tres .info-project .deploy,
   body .projects-section .container-projects .projects .project-quatro .info-project .deploy {
     width: 100%;
+  }
+  body .education-section .container-section .left-section .container-line {
+    margin-left: 0;
+  }
+  body .education-section .container-section .left-section .container-line .line .divider-line .card {
+    width: 80vw;
+  }
+  body .education-section .container-section .left-section .container-line .line .divider-line .card .course {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   body .education-section .container-section .education-content {
     display: none;
